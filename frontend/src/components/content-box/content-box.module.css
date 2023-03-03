@@ -1,0 +1,32 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px;
+}
+
+.innerContainer {
+  border: 3px solid white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.heading {
+  position: absolute;
+  top: -42px;
+  background-color: #121212;
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 24px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.headingLeft {
+  left: 10px;
+}
+
+.headingRight {
+  right: 10px;
+}

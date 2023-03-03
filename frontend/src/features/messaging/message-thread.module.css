@@ -1,0 +1,140 @@
+.screen {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 72px;
+  box-sizing: border-box;
+}
+
+.text {
+  color: white;
+  font-family: "Noto Sans Display";
+}
+
+.messageInfoContainer {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+}
+
+.messageInfoInnerContainer {
+  width: 370px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.newMessageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+}
+
+.newMessageInnerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.textarea {
+  resize: none;
+  background-color: #121212;
+  border: 3px solid white;
+  margin-right: 4px;
+  width: 200px;
+  height: 34px;
+  color: white;
+  font-family: "Noto Sans Display";
+}
+
+.messages {
+  list-style-type: none;
+  width: 370px;
+  max-width: 100%;
+  padding: 5px;
+  padding-top: 102px;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.messageReceived {
+  border-radius: 8px;
+  background-color: #374048;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 30px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  max-width: calc(100% - 30px);
+  width: fit-content;
+  min-width: 72px;
+}
+
+.messageSent {
+  border-radius: 8px;
+  background-color: #008080;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 30px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  max-width: calc(100% - 30px);
+  width: fit-content;
+  min-width: 72px;
+  align-self: end;
+}
+
+.messageReceived pre,
+.messageSent pre {
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 14px;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.blockedMessageContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+}
+
+.errorText {
+  color: transparent;
+  animation: error-text 250ms ease-in-out 1 forwards;
+  font-family: "Noto Sans Display";
+}
+
+@keyframes error-text {
+  from {
+    color: transparent;
+  }
+  to {
+    color: rgba(220, 20, 60, 0.5);
+  }
+}

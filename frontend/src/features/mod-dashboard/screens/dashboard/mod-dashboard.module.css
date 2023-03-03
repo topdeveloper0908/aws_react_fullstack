@@ -1,0 +1,115 @@
+.screen {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  margin: 20px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  color: white;
+  box-shadow: 4px 4px 4px #0c0c0c;
+  font-family: "Noto Sans Display";
+}
+
+.closeBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.closeBtn {
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+}
+
+.largeText {
+  color: aquamarine;
+
+  font-size: 42px;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+}
+
+.link {
+  display: block;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.modalContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  width: 500px;
+  max-width: 100%;
+  border: 3px solid yellow;
+  background-color: #121212;
+  border-radius: 2px;
+  box-shadow: 4px 4px 6px black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInAndUp 500ms ease-in-out 1 forwards;
+  z-index: 1001;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeInAndUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

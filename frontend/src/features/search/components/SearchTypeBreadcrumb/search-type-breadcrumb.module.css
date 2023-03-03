@@ -1,0 +1,23 @@
+.searchTypeBreadcrumb {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px;
+}
+
+.searchTypeBtn {
+  background-color: transparent;
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+.searchTypeBtn:hover {
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: 3px solid white;
+  font-weight: bold;
+}

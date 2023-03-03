@@ -1,0 +1,36 @@
+.productScreenContainer {
+  background-color: #121212;
+  padding: 80px;
+  min-height: 100vh;
+  height: fit-content;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Noto Sans Display";
+}
+
+.horizontalContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.infoContainer {
+  margin-left: 20px;
+}
+
+.heading {
+  font-size: 24px;
+}
+
+.link {
+  color: yellow;
+  font-family: "Noto Sans Display";
+}
+
+.additionalInfoContainer {
+  width: 700px;
+}

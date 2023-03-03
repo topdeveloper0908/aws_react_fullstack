@@ -1,0 +1,76 @@
+.loginScreenContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+
+.loginForm {
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heading {
+  font-family: "Noto Sans Display";
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 18px;
+  margin-left: 10px;
+}
+
+.textInput {
+  background-color: #121212;
+  color: white;
+  border: none;
+  border-bottom: 3px solid white;
+  width: 285px;
+  font-family: "Noto Sans Display";
+}
+
+.textInput:focus {
+  outline-offset: 3px;
+  outline: 3px solid yellow;
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loginButton {
+  margin-top: 24px;
+}
+
+.errorMessage {
+  color: transparent;
+  animation: error-text 250ms ease-in-out 1 forwards;
+}
+
+.required {
+  animation: required-field 300ms ease-in-out 1 forwards;
+}
+
+@keyframes required-field {
+  from {
+    background-color: #121212;
+  }
+  to {
+    background-color: rgba(220, 20, 60, 0.5);
+  }
+}
+
+@keyframes error-text {
+  from {
+    color: transparent;
+  }
+  to {
+    color: rgba(220, 20, 60, 0.5);
+  }
+}

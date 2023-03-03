@@ -1,0 +1,243 @@
+.modal {
+  width: 500px;
+  max-width: 90%;
+  border: 3px solid yellow;
+  background-color: #121212;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInAndUp 750ms ease-in-out 1 forwards;
+  border-radius: 2px;
+  box-shadow: 4px 4px 6px black;
+}
+
+.heading,
+.label {
+  font-family: "Noto Sans Display";
+  color: white;
+  margin: 4px;
+  padding: 0;
+}
+
+.textInput {
+  background-color: #121212;
+  color: white;
+  border: none;
+  border-bottom: 3px solid white;
+  display: inline-block;
+  font-family: "Noto Sans Display";
+  width: 100%;
+}
+
+.textInput:focus {
+  outline: 2px solid yellow;
+}
+
+.textarea {
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  resize: none;
+  display: inline-block;
+  font-family: "Noto Sans Display";
+  min-height: 38px;
+}
+
+.textarea:focus {
+  border: 3px solid yellow;
+  outline: none;
+}
+
+.formRow {
+  display: flex;
+}
+
+.labelInputGroupLg {
+  box-sizing: border-box;
+  flex: 0.5;
+  padding-right: 4px;
+  margin-right: 4px;
+}
+
+.labelInputGroupSm {
+  box-sizing: border-box;
+  flex: 0.25;
+  padding-right: 4px;
+}
+
+.btnRow {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+.saveBtn {
+  border: none;
+  background-color: #008080;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.saveBtn:hover {
+  cursor: pointer;
+  background-color: #00c2c2;
+}
+
+.saveBtn:active {
+  box-shadow: inset 4px 4px 4px #008080;
+}
+
+.cancelBtn {
+  border: none;
+  background-color: #a54d54;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.cancelBtn:hover {
+  cursor: pointer;
+  background-color: #c6868b;
+}
+
+.errorMessage {
+  color: transparent;
+  font-style: italic;
+  animation: error-text 250ms ease-in-out 1 forwards;
+}
+
+.required {
+  animation: required-field 300ms ease-in-out 1 forwards;
+}
+
+.tagsOuterContainer {
+  width: 100%;
+}
+
+.tagsInnerContainer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.labelInputButtonGroupButton button {
+  border: none;
+  border-radius: 50%;
+  background-color: darkgrey;
+  color: #121212;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.labelInputButtonGroupButton button:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.tag {
+  background-color: rgb(61, 61, 61);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 4px;
+  font-size: 14px;
+  margin: 4px;
+}
+
+.tag button {
+  background-color: rgb(220, 20, 37);
+  border: none;
+  outline: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5px;
+  margin-left: 5px;
+  color: darkgray;
+  position: relative;
+}
+
+.tag button span {
+  position: absolute;
+  top: 12;
+  left: 12;
+}
+
+.tag button:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: crimson;
+}
+
+.fileInput {
+  color: white;
+}
+
+.closeBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.closeBtn {
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+}
+
+@keyframes error-text {
+  from {
+    color: transparent;
+  }
+  to {
+    color: rgba(220, 20, 60, 0.5);
+  }
+}
+
+@keyframes required-field {
+  from {
+    background-color: #121212;
+  }
+  to {
+    background-color: rgba(220, 20, 60, 0.5);
+  }
+}
+
+@keyframes fadeInAndUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

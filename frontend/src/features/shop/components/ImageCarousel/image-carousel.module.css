@@ -1,0 +1,117 @@
+.slideshowOuterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+}
+
+.slideshow {
+  position: relative;
+}
+
+.slide {
+  height: 270px;
+  width: 270px;
+  background-color: #2e2e2e;
+}
+
+.slideHidden {
+  display: none;
+}
+
+.slideActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshowImage {
+  width: 200px;
+}
+
+.slideshowImage:hover {
+  cursor: pointer;
+}
+
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  user-select: none;
+  border: none;
+  background-color: transparent;
+}
+
+/* Position the previous btn to the left and the next btn to the right */
+.previous {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.expandedImageModalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: rgba(18, 18, 18, 0.5);
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.expandedImageModal {
+  background-color: #2e2e2e;
+  padding: 40px;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.expandedImage {
+  object-fit: contain;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background-color: transparent;
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+}
+
+.thumbnailsContainer {
+  display: flex;
+}
+
+.thumbnail {
+  margin-top: 8px;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+.thumbnail:hover {
+  cursor: pointer;
+}
+
+.thumbnailSelected {
+  transform: scale(1.2);
+}

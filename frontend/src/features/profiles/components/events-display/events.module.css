@@ -1,0 +1,41 @@
+.eventsContainer {
+  width: 100%;
+  background-color: #121212;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title {
+  font-family: "Noto Sans Display";
+  font-size: 18px;
+}
+
+.link {
+  font-family: "Noto Sans Display";
+  font-size: 18px;
+}
+
+.text {
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 14px;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}

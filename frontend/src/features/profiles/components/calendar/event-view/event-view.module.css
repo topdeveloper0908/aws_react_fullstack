@@ -1,0 +1,124 @@
+.modal {
+  width: 500px;
+  border: 3px solid yellow;
+  background-color: #121212;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+}
+
+.heading,
+.label,
+.modal p {
+  font-family: "Noto Sans Display";
+  color: white;
+  margin: 4px;
+  padding: 0;
+}
+
+.annotation {
+  color: gray;
+  font-style: italic;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 18px;
+  margin-bottom: 4px;
+}
+
+.deleteMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.deleteMenuLabel {
+  color: #c6868b;
+  margin-bottom: 4px;
+}
+
+.cancelBtn {
+  border: none;
+  background-color: #a54d54;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.cancelBtn:hover {
+  cursor: pointer;
+  background-color: #c6868b;
+}
+
+.deleteBtn {
+  border: none;
+  background-color: #6e0a1e;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+  background-color: #cd1338;
+}
+
+.editBtn {
+  border: none;
+  background-color: #5314d2;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.editBtn:hover {
+  cursor: pointer;
+  background-color: #7d44ee;
+}
+
+.errorMessage {
+  color: transparent;
+  animation: error-text 250ms ease-in-out 1 forwards;
+}
+
+.closeBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.closeBtn {
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+}
+
+@keyframes error-text {
+  from {
+    color: transparent;
+  }
+  to {
+    color: rgba(220, 20, 60, 0.5);
+  }
+}

@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Pacifico&family=Permanent+Marker&display=swap");
+
+body {
+  background-color: #121212;
+}
+
+.btn {
+  font-family: "Noto Sans Display";
+  background-color: #374048;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  /* color: #121212; */
+  background-color: #708090;
+}
+
+.btn:active {
+  box-shadow: inset 2px 2px 4px #374048;
+}
+
+.btn:disabled {
+  background-color: hsl(210, 13%, 75%);
+}
+
+.btn-save {
+  font-family: "Noto Sans Display";
+  background-color: #008080;
+  color: #121212;
+  font-size: 16px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.btn-save:hover {
+  background-color: #00c2c2;
+}
+
+.btn-save:active {
+  box-shadow: inset 2px 2px 4px #008080;
+}
+
+.btn-save:disabled {
+  background-color: #4dffff;
+}
+
+.btn-cancel {
+  font-family: "Noto Sans Display";
+  background-color: #a54d54;
+  color: #121212;
+  font-size: 16px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.btn-cancel:hover {
+  background-color: #c6868b;
+}
+
+.btn-cancel:active {
+  box-shadow: inset 2px 2px 4px #a54d54;
+}
+
+.btn-cancel:disabled {
+  background-color: hsl(355, 36%, 78%);
+}
+
+.btn-delete {
+  font-family: "Noto Sans Display";
+  color: black;
+  font-size: 16px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-right: 4px;
+  position: relative;
+  background: repeating-linear-gradient(
+    45deg,
+    yellow,
+    yellow 10px,
+    #2e2e2e 10px,
+    #2e2e2e 20px
+  );
+  z-index: 1001;
+}
+
+.btn-delete::first-line {
+  background-color: yellow;
+  box-shadow: 14px 4px yellow, -12px 4px yellow, -12px -4px yellow,
+    14px -4px yellow;
+}
+
+.btn-delete:hover {
+  background: repeating-linear-gradient(
+    45deg,
+    #ffff32,
+    rgb(255, 255, 50) 10px,
+    #5c5c5c 10px,
+    #5c5c5c 20px
+  );
+}
+
+.btn-delete:hover::first-line {
+  background-color: #ffff32;
+  box-shadow: 14px 4px #ffff32, -12px 4px #ffff32, -12px -4px #ffff32,
+    14px -4px #ffff32;
+}
+
+.btn-delete:active {
+  box-shadow: inset 2px 2px 4px #2e2e2e;
+}
+
+.btn-delete:disabled {
+  background-color: hsl(355, 36%, 78%);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.formRow {
+  display: flex;
+}
+
+.labelInputGroup {
+  margin: 12px;
+  flex: 1;
+}
+
+.textInput,
+.PhoneInputInput {
+  background-color: #121212;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+  font-family: "Noto Sans Display";
+}
+
+.textInput:focus,
+.PhoneInputInput:focus {
+  outline-offset: 2px;
+  outline: 2px solid gray;
+  /* transition: all 0.1s; */
+}
+
+.PhoneInputCountrySelect {
+  background-color: #121212;
+  color: white;
+  font-family: "Noto Sans Display";
+}
+
+.autocompleteContainer {
+  width: 100%;
+}
+
+.errorMessage {
+  color: transparent;
+  animation: error-text 250ms ease-in-out 1 forwards;
+}
+
+.pac-container {
+  z-index: 10000 !important;
+  background-color: #121212;
+  color: white !important;
+  font-family: "Noto Sans Display";
+}
+
+@keyframes error-text {
+  from {
+    color: transparent;
+  }
+  to {
+    color: rgba(220, 20, 60, 0.5);
+  }
+}

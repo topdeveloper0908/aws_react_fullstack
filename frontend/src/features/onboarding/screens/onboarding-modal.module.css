@@ -1,0 +1,74 @@
+.modalContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  width: 500px;
+  max-width: 100%;
+  border: 3px solid yellow;
+  background-color: #121212;
+  border-radius: 6px;
+  box-shadow: 4px 4px 6px black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInAndUp 500ms ease-in-out 1 forwards;
+  z-index: 1001;
+}
+
+.text {
+  font-family: "Noto Sans Display";
+  color: white;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
+.closeBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.closeBtn {
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+}
+
+.link {
+  color: yellow;
+}
+
+@keyframes fadeInAndUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modalContainer {
+    position: absolute;
+    height: fit-content;
+    padding-top: 0;
+  }
+
+  .modal {
+    border: none;
+  }
+}

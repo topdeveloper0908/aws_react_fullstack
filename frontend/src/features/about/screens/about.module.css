@@ -1,0 +1,79 @@
+.screenContainer {
+  width: 100%;
+  background-color: #121212;
+}
+
+.hero {
+  width: 100%;
+  height: 650px;
+  background-image: url("https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.greetingContainer {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.greetingContainer h1 {
+  color: white;
+  font-family: "Permanent Marker";
+  font-size: 42px;
+  margin: 0;
+  padding: 0;
+}
+
+.greetingContainer p {
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  text-align: center;
+}
+
+.greetingContainer a {
+  color: white;
+  margin-top: 20px;
+}
+
+.learnMoreContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px;
+}
+
+.learnMoreText {
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 18px;
+  margin: 20px;
+}
+
+.registerButton {
+  border: none;
+  background-color: #008080;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
+.registerButton:hover {
+  cursor: pointer;
+  background-color: #00c2c2;
+}

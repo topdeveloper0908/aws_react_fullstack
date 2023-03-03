@@ -1,0 +1,42 @@
+.eventViewScreenContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  padding-top: 92px;
+  box-sizing: border-box;
+}
+
+.innerEventView {
+  max-width: 100%;
+  width: 768px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  color: white;
+  font-family: "Permanent Marker";
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.subheading {
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: yellow;
+  font-family: "Noto Sans Display";
+  font-size: 18px;
+}

@@ -1,0 +1,115 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.headingContainer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: linear-gradient(transparent, #121212);
+}
+
+.heading {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Permanent Marker";
+  -webkit-text-stroke: 3px black;
+  color: white;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.brandContainer {
+  position: absolute;
+  top: 72px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#121212, transparent);
+}
+
+.brand {
+  font-size: 100px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Permanent Marker";
+  font-weight: bolder;
+  text-align: center;
+  margin-left: 8px;
+  -webkit-text-stroke: 3px black;
+  color: white;
+  /*#2cff9d; #3edcff; */
+  letter-spacing: 1rem;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+@media screen and (max-width: 800px) {
+  .brand {
+    font-size: 72px;
+  }
+  .heading {
+    font-size: 36px;
+    left: 20px;
+    -webkit-text-stroke: 1.5px black;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .brand {
+    font-size: 36px;
+    left: 20px;
+    -webkit-text-stroke: 1.5px black;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .brand {
+    letter-spacing: 0.5rem;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes swoopIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  90% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

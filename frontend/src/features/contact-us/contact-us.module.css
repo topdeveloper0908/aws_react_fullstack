@@ -1,0 +1,60 @@
+.contactUsForm {
+  background-color: #ffffff;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* color: white; */
+  padding-top: 80px;
+}
+
+.contactUsForm label,
+h2 {
+  font-family: "Noto sans display";
+}
+
+.input {
+  width: 300px;
+  background-color: #ffffff;
+  color: #191919;
+  border: none;
+  border: 1px solid #191919;
+  font-family: "Noto sans display";
+  display: block;
+  margin-bottom: 18px;
+}
+
+.textarea {
+  resize: none;
+  border: 1px solid #191919;
+  height: 150px;
+  width: 300px;
+  background-color: #ffffff;
+  color: #191919;
+  font-family: "Noto sans display";
+  margin-bottom: 18px;
+}
+
+.errorMessage {
+  color: transparent;
+  font-style: italic;
+  animation: error-text 250ms ease-in-out 1 forwards;
+}
+
+.btn {
+  border: 1px solid gray;
+  border-radius: 5px;
+  
+}
+
+@keyframes error-text {
+  from {
+    color: transparent;
+  }
+  to {
+    color: rgba(220, 20, 60, 0.5);
+  }
+}

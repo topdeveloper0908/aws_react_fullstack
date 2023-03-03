@@ -1,0 +1,23 @@
+.toast {
+  color: white;
+  font-family: "Noto sans display";
+  font-size: 16px;
+  animation: slideInSideOut 7s ease-in-out 1 forwards;
+  padding: 20px;
+  margin: 8px;
+}
+
+@keyframes slideInSideOut {
+  0% {
+    transform: translateX(-120%);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}

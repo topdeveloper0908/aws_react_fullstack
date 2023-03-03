@@ -1,0 +1,429 @@
+.profileContainer {
+  width: 100%;
+  background-color: #121212;
+  margin-top: 64px;
+}
+
+.coverContainer {
+  width: 100%;
+  position: relative;
+}
+
+.coverPhoto {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profilePic {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 160px;
+  right: 40px;
+  border: 3px solid white;
+}
+
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background: linear-gradient(transparent, 20%, #121212);
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.heading {
+  color: white;
+  font-family: "Permanent Marker";
+  font-size: 42px;
+  margin: 0;
+  padding: 0;
+}
+
+.subheading {
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.interactionBtnsContainer {
+  margin-left: 40px;
+}
+
+.text {
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 18px;
+}
+
+.tag {
+  color: white;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.subheadingSmall {
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.contentContainer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px;
+}
+
+.contentInnerContainer {
+  border: 3px solid white;
+  position: relative;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+
+.contentHeading {
+  position: absolute;
+  top: -42px;
+  left: 10px;
+  background-color: #121212;
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 24px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.editContent {
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+.textContent {
+  color: white;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 8px;
+  margin-left: 8px;
+  background-color: transparent;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  outline: none;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.contentBtnRow {
+  display: flex;
+  justify-content: end;
+}
+
+.cancelBtn {
+  border: none;
+  background-color: #a54d54;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.saveBtn {
+  border: none;
+  background-color: #008080;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.cancelBtn:hover {
+  cursor: pointer;
+  background-color: #c6868b;
+}
+
+.saveBtn:hover {
+  cursor: pointer;
+  background-color: #00c2c2;
+}
+
+.saveMessage {
+  font-style: italic;
+  color: white;
+  padding-top: 8px;
+}
+
+.editButton {
+  background-color: #121212;
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+.editButton:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
+.changeCoverPhoto {
+  float: right;
+  margin-right: 10px;
+}
+
+.follow {
+  color: white;
+}
+
+.follow:hover {
+  color: yellow;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.productsWrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.noDataMessage {
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.links {
+  padding-left: 20px;
+}
+
+.editLinksOuterContainer {
+  width: 100%;
+}
+
+.editLinksInnerContainer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 12px;
+}
+
+.editableLink {
+  background-color: rgb(61, 61, 61);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 4px;
+  font-size: 14px;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.editableLink button {
+  background-color: rgb(220, 20, 37);
+  border: none;
+  outline: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5px;
+  margin-left: 5px;
+  color: darkgray;
+  position: relative;
+}
+
+.editableLink button span {
+  position: absolute;
+  top: 12;
+  left: 12;
+}
+
+.editableLink button:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: crimson;
+}
+
+.labelInputButtonGroupButton {
+  flex: 0.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.labelInputButtonGroupButton button {
+  border: none;
+  border-radius: 50%;
+  background-color: darkgrey;
+  color: #121212;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.labelInputButtonGroupButton button:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.readonlyLinksContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.link {
+  color: yellow;
+  font-family: "Noto Sans Display";
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.thumbnailsContainer {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 120px);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  row-gap: 20px;
+  max-height: 240px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 500px;
+  max-width: 100%;
+  border: 3px solid yellow;
+  background-color: #121212;
+  padding: 20px;
+}
+
+.closeBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.closeBtn {
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+}
+
+.modalHeading {
+  font-family: "Noto Sans Display";
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .profilePic {
+    top: 80px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .editLinksInnerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.errorMessage {
+  color: transparent;
+  font-style: italic;
+  animation: error-text 250ms ease-in-out 1 forwards;
+}
+
+.toastContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@keyframes error-text {
+  from {
+    color: transparent;
+  }
+  to {
+    color: rgba(220, 20, 60, 0.5);
+  }
+}
+
+.required {
+  animation: required-field 300ms ease-in-out 1 forwards;
+}
+
+@keyframes required-field {
+  from {
+    background-color: #121212;
+  }
+  to {
+    background-color: rgba(220, 20, 60, 0.5);
+  }
+}

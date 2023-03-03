@@ -1,0 +1,28 @@
+.audioPlayerContainer {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: #121212;
+  padding: 10px;
+  padding-bottom: 0px;
+  color: white;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.audioPlayerContainer button {
+  background-color: transparent;
+  border: none;
+  margin: 4px;
+}
+
+.audioPlayerTitleButtonsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.audioPlayer {
+  background-color: transparent;
+}

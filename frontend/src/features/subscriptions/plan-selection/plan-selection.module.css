@@ -1,0 +1,128 @@
+.outerContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.outerContainer h2 {
+  color: white;
+  font-family: "Permanent Marker";
+  text-align: center;
+}
+
+.outerContainer h3 {
+  color: white;
+  font-family: "Noto Sans Display";
+  text-align: center;
+}
+
+.plansContainer {
+  display: flex;
+  width: 100%;
+}
+
+.plansContainer img {
+  height: 350px;
+  width: 350px;
+}
+
+.option {
+  flex: 0.33;
+  margin: 20px;
+  transition: all ease-in-out 250ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.option img {
+  opacity: 0.5;
+}
+
+.option:hover {
+  cursor: pointer;
+}
+
+.labelContainer {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.labelContainer input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.label {
+  color: white;
+  font-family: "Noto Sans Display";
+  font-size: 24px;
+  padding: 4px;
+  margin: 24px;
+  z-index: 1000;
+}
+
+.label:hover {
+  cursor: pointer;
+}
+
+.selectedImg {
+  opacity: 1 !important;
+  transform: scale(1.15);
+  transition: all ease-in-out 250ms;
+}
+
+.selected {
+  animation: outline-fade-in 250ms ease-in-out 1 forwards;
+}
+
+.btnContainer {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: end;
+}
+
+.singlePlanView {
+  display: none;
+}
+.labelContainer {
+  display: flex;
+}
+
+.singlePlanView {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 399px) {
+  .label {
+    font-size: 14px;
+  }
+}
+
+@keyframes outline-fade-in {
+  from {
+    outline: 2px solid transparent;
+  }
+  to {
+    outline: 2px solid yellow;
+  }
+}
+.plan-selection_label__3mZn4 {
+  margin: 0px !important;
+}

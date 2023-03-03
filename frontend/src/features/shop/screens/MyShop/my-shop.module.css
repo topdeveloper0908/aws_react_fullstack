@@ -1,0 +1,42 @@
+.myShopScreen {
+  box-sizing: border-box;
+  background-color: #121212;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+}
+
+.heading {
+  color: white;
+  font-family: "Noto Sans Display";
+}
+
+.newProductThumbnail {
+  min-width: 200px;
+  min-height: 200px;
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newProductThumbnail:hover {
+  background-color: rgb(177, 177, 177);
+  cursor: pointer;
+}
+
+.modalContainer {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

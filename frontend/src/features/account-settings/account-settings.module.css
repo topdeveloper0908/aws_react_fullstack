@@ -1,0 +1,269 @@
+.screenContainer {
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  box-sizing: border-box;
+}
+
+.accountSettingsContainer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Noto Sans Display";
+  width: 500px;
+  max-width: 100%;
+}
+
+.formRow {
+  display: flex;
+  width: 100%;
+}
+.formRowFieldLg {
+  width: 50%;
+  margin-right: 4px;
+  box-sizing: border-box;
+}
+
+.formRowFieldSm {
+  width: 25%;
+  margin-right: 4px;
+  box-sizing: border-box;
+}
+
+.labelBtnRow {
+  display: flex;
+  align-items: center;
+}
+
+.inputReadOnly {
+  background-color: #121212;
+  border: none;
+  color: white;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputEditable {
+  background-color: #121212;
+  border: 1px solid yellow;
+  color: white;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.editBtn {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.editBtn:hover {
+  cursor: pointer;
+}
+
+.btnRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.cancelBtn {
+  border: none;
+  background-color: #a54d54;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.saveBtn {
+  border: none;
+  background-color: #008080;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+.cancelBtn:hover {
+  cursor: pointer;
+  background-color: #c6868b;
+}
+
+.saveBtn:hover {
+  cursor: pointer;
+  background-color: #00c2c2;
+}
+
+.changePasswordBtn {
+  border: none;
+  background-color: #ffc042;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+.changePasswordBtn:hover {
+  cursor: pointer;
+  background-color: #ffc95e;
+}
+
+.deleteBtn {
+  border: none;
+  background-color: #6e0a1e;
+  color: #121212;
+  font-family: "Noto Sans Display";
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+  background-color: #cd1338;
+}
+
+.tagsOuterContainer {
+  width: 100%;
+}
+
+.tagsInnerContainer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tagInputBtnContainer {
+  display: flex;
+  align-items: center;
+}
+
+.addTagButton button {
+  border: none;
+  border-radius: 50%;
+  background-color: darkgrey;
+  color: #121212;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.addTagButton button:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.tag {
+  background-color: rgb(61, 61, 61);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 4px;
+  font-size: 14px;
+  margin: 4px;
+  margin-left: 0px;
+}
+
+.tag button {
+  background-color: rgb(220, 20, 37);
+  border: none;
+  outline: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5px;
+  margin-left: 5px;
+  color: darkgray;
+  position: relative;
+}
+
+.tag button span {
+  position: absolute;
+  top: 12;
+  left: 12;
+}
+
+.tag button:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: crimson;
+}
+
+.deleteAccountModalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(18, 18, 18, 0.5);
+}
+
+.deleteAccountModal {
+  background-color: #121212;
+  border: 3px solid yellow;
+  color: white;
+  padding: 20px;
+  width: 500px;
+  max-width: 100%;
+}
+
+.saveMessage {
+  font-style: italic;
+  color: white;
+  margin-left: 5px;
+  margin-right: 15px;
+  padding-top: 8px;
+}
+
+.fadeIn {
+  animation: fadeIn 100ms ease-in-out 1 forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

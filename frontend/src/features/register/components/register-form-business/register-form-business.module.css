@@ -1,0 +1,135 @@
+.container {
+  width: 100%;
+}
+
+.subheading {
+  text-align: center;
+  font-family: "Permanent Marker";
+  font-weight: 400;
+}
+
+.labelInputButtonGroupInput {
+  flex: 0.97;
+  margin-left: 12px;
+}
+
+.labelInputButtonGroupButton {
+  /* flex: 0.1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.labelInputButtonGroupButton button {
+  border: none;
+  border-radius: 50%;
+  background-color: darkgrey;
+  color: #121212;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.labelInputButtonGroupButton button:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.tagsOuterContainer {
+  margin-left: 12px;
+  width: 100%;
+}
+
+.tagsInnerContainer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, 130px);
+}
+
+.tag {
+  background-color: rgb(61, 61, 61);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 4px;
+  font-size: 14px;
+  margin: 4px;
+}
+
+.tag button {
+  background-color: rgb(220, 20, 37);
+  border: none;
+  outline: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5px;
+  margin-left: 5px;
+  color: darkgray;
+  position: relative;
+}
+
+.tag button span {
+  position: absolute;
+  top: 12;
+  left: 12;
+}
+
+.tag button:hover {
+  cursor: pointer;
+  background-color: yellow;
+  color: crimson;
+}
+
+.nextBtn {
+  float: right;
+}
+
+.backBtn {
+  float: left;
+}
+
+.errorMessageSmall {
+  color: transparent;
+  animation: error-text 250ms ease-in-out 1 forwards;
+}
+
+.errorMessage {
+  margin-left: 12px;
+  color: transparent;
+  animation: error-text 250ms ease-in-out 1 forwards;
+}
+
+.required {
+  animation: required-field 300ms ease-in-out 1 forwards;
+}
+
+@keyframes required-field {
+  from {
+    background-color: #121212;
+  }
+  to {
+    background-color: rgba(220, 20, 60, 0.5);
+  }
+}
+
+@keyframes error-text {
+  from {
+    color: transparent;
+  }
+  to {
+    color: rgba(220, 20, 60, 0.5);
+  }
+}

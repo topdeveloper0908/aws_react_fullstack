@@ -1,0 +1,232 @@
+.container {
+  margin: 40px;
+  margin-top: 80px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  background-color: #374048;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 998;
+  padding-bottom: 0px;
+}
+
+.headerUpperRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerItem {
+  max-width: 25%;
+}
+
+.caption {
+  color: white;
+  font-family: "Noto Sans Display";
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: yellow;
+}
+
+.text {
+  color: white;
+  font-family: "Noto Sans Display";
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.heading {
+  font-family: "Noto Sans Display";
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.textarea {
+  resize: none;
+  background-color: #121212;
+  border: 3px solid white;
+  color: white;
+  font-family: "Noto Sans Display";
+  height: 100px;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: yellow;
+}
+
+.textInput {
+  background-color: #121212;
+  color: white;
+  font-family: "Noto Sans Display";
+  border: none;
+  outline: none;
+  border-bottom: 3px solid white;
+}
+
+.messageReceived {
+  border-radius: 8px;
+  background-color: #374048;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  margin-right: 80px;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "Noto Sans Display";
+}
+
+.lastMessageReceived {
+  border-radius: 8px;
+  background-color: #374048;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "Noto Sans Display";
+  position: relative;
+}
+
+.lastMessageReceived:after {
+  content: "";
+  display: block; /* reduce the damage in FF3.0 */
+  position: absolute;
+  bottom: 10px;
+  right: -5px;
+  width: 0;
+  border-width: 5px 0 5px 5px;
+  border-style: solid;
+  border-color: transparent #374048;
+}
+
+.messageSent {
+  border-radius: 8px;
+  background-color: #008080;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 40px;
+  margin-left: 80px;
+  font-family: "Noto Sans Display";
+  margin-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.lastMessageSent {
+  border-radius: 8px;
+  background-color: #008080;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 40px;
+  margin-left: 100px;
+  font-family: "Noto Sans Display";
+  margin-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+/* creates triangle */
+.lastMessageSent:after {
+  content: "";
+  display: block; /* reduce the damage in FF3.0 */
+  position: absolute;
+  bottom: 10px;
+  left: -5px;
+  width: 0;
+  border-width: 5px 5px 5px 0;
+  border-style: solid;
+  border-color: transparent #008080;
+}
+
+.messageTitle {
+  margin: 0;
+  padding: 0;
+}
+
+.messageText {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.btnRow {
+  display: flex;
+  justify-content: end;
+}
+
+.errorMessage {
+  color: transparent;
+  font-style: italic;
+  animation: error-text 250ms ease-in-out 1 forwards;
+}
+
+.mobileBtnsContainer {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 58px;
+  right: -62px;
+}
+
+.mobileBtnsContainer button {
+  margin-bottom: 4px !important;
+  margin-top: 0px !important;
+  width: 54px !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .heading,
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0px;
+    margin-top: 144px;
+  }
+  .btnRow {
+    display: none;
+  }
+
+  .mobileBtnsContainer {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .heading,
+  .text {
+    font-size: 10px;
+  }
+}
+
+@keyframes error-text {
+  from {
+    color: transparent;
+  }
+  to {
+    color: rgba(220, 20, 60, 1);
+  }
+}

@@ -1,0 +1,9 @@
+.chartContainer {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px #121212;
+  flex: 1;
+  margin-left: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}

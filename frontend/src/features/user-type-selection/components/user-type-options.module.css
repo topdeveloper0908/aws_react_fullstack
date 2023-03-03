@@ -1,0 +1,160 @@
+.outerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: start;
+  padding-top: 40px;
+  box-sizing: border-box;
+  background-color: #121212;
+}
+
+.textContainer {
+  color: white;
+  font-family: "Permanent Marker";
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.select {
+  background-color: #121212;
+  color: yellow;
+  font-family: "Permanent Marker";
+  font-size: 36px;
+  outline: none;
+  border: none;
+}
+
+.select option {
+  font-size: 24px;
+}
+
+.select:hover {
+  cursor: pointer;
+}
+
+.horizontalContainer {
+  width: 100vw;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  height: 300px;
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px black;
+  animation-name: none;
+  background-color: white;
+}
+
+.desktopImage {
+  height: 225px;
+  width: 225px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px black;
+  animation-name: none;
+  background-color: white;
+  transition: transform 750ms;
+}
+
+.desktopImage:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.selected {
+  transform: scale(1.1);
+}
+
+.text {
+  color: white;
+  font-family: "Permanent Marker";
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.definition {
+  color: white;
+  font-family: "Noto sans display";
+  font-size: 24px;
+  /* width: 800px; */
+  max-width: 100vw;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.examples {
+  color: white;
+  font-family: "Noto sans display";
+  font-size: 18px;
+  /* width: 800px; */
+  max-width: 100vw;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.fadeIn {
+  animation: fadeIn 250ms ease-in-out 1 forwards;
+}
+
+.fadeInSlow {
+  animation: fadeIn 2s ease-in-out 1 forwards;
+}
+
+.mobileView {
+  display: none;
+}
+
+@media screen and (max-width: 1180px) {
+  .desktopImage {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .desktopImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .desktopView {
+    display: none;
+  }
+
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
